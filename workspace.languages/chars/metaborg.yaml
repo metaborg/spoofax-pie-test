@@ -1,0 +1,37 @@
+---
+id: org.metaborg:lang.characters:0.1.0-SNAPSHOT
+name: characters
+dependencies:
+  compile:
+  - org.metaborg:org.metaborg.meta.lang.esv:${metaborgVersion}
+  - org.metaborg:org.metaborg.meta.lang.template:${metaborgVersion}
+pardonedLanguages:
+- EditorService
+- Stratego-Sugar
+- SDF
+debug:
+  typesmart: false
+language:
+  sdf:
+    pretty-print: minijava
+    # If set to java, set the table in editor/Syntax.esv to target/metaborg/sdf-new.tbl
+    sdf2table: c
+    placeholder:
+      prefix: "$"
+  stratego:
+    format: ctree
+    args:
+    - -la
+    - stratego-lib
+    - -la
+    - stratego-sglr
+    - -la
+    - stratego-gpp
+    - -la
+    - stratego-xtc
+    - -la
+    - stratego-aterm
+    - -la
+    - stratego-sdf
+    - -la
+    - strc

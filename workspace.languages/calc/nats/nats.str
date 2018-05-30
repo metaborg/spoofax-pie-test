@@ -1,0 +1,12 @@
+module nats
+
+imports
+
+  nabl2shared
+  nabl2runtime
+  desugar
+  calc
+
+rules
+
+  nats = nabl2-analyze(desugar-calc)

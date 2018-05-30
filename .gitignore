@@ -1,0 +1,26 @@
+# Eclipse workspace
+/**/.metadata
+
+# PIE database
+/**/.pie
+
+# Java
+*.class
+*.jar
+hs_err_pid*
+
+# Maven
+/**/target
+/**/.polyglot.*
+
+# Eclipse
+/**/.classpath
+/**/.factorypath
+/**/.project
+/**/.settings
+
+# IntelliJ
+/**/*.iml
+
+# Spoofax
+/**/src-gen

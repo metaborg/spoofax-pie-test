@@ -1,0 +1,10 @@
+module strings
+
+imports signatures/Strings-sig
+imports nabl-lib
+imports base
+
+rules // literals    
+
+  [[ String(str) ^ (s) : STRING() ]].
+  

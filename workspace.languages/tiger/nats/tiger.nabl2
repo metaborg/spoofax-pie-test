@@ -1,0 +1,19 @@
+module tiger
+
+imports arrays
+imports base
+imports bindings
+imports control-flow
+imports functionz
+imports nabl-lib
+imports numbers
+imports records
+imports strings
+imports types
+imports variables
+//imports equality
+
+rules // top-level module
+
+  [[ Mod(e) ^ (s) : ty ]] :=
+     [[ e ^ (s) : ty ]].
